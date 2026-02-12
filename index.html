@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh Jaychandra Zambre | Senior Data Scientist, MLOps & Gen AI Engineer</title>
+    <meta name="description" content="Senior Data Scientist specializing in MLOps, Generative AI, and Agentic AI systems. Building production-grade AI solutions for international clients.">
+    <meta name="keywords" content="Data Science, Machine Learning, MLOps, Generative AI, Agentic AI, LLM, Transformer Models, Neural Networks, Deep Learning, AI Engineering, Cloud ML, Kubernetes, Docker, Python, TensorFlow, PyTorch, RAG, LangChain, Vector Databases, Model Deployment, AI Automation">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <select id="languageSelect" onchange="changeLanguage(this.value)">
+            <option value="en">🇬🇧 English</option>
+            <option value="de">🇩🇪 Deutsch</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="ja">🇯🇵 日本語</option>
+            <option value="zh">🇨🇳 中文</option>
+        </select>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">RZ</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-translate="nav_home">Home</a>
+                <a href="#expertise" class="nav-link" data-translate="nav_expertise">Expertise</a>
+                <a href="#tech-stack" class="nav-link" data-translate="nav_stack">Stack</a>
+                <a href="#tools" class="nav-link" data-translate="nav_tools">Tools</a>
+                <a href="#contact" class="nav-link" data-translate="nav_contact">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <canvas id="particleCanvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title" data-translate="hero_title">
+                    Senior Data Scientist<br>
+                    <span class="gradient-text">MLOps & Generative AI Engineer</span>
+                </h1>
+                <p class="hero-subtitle" data-translate="hero_subtitle">
+                    Building production-grade AI systems | Agentic AI | LLM Applications | MLOps Architecture
+                </p>
+                <div class="hero-keywords">
+                    <span class="keyword">Generative AI</span>
+                    <span class="keyword">LLM Engineering</span>
+                    <span class="keyword">Agentic AI</span>
+                    <span class="keyword">MLOps</span>
+                    <span class="keyword">RAG Systems</span>
+                    <span class="keyword">Vector Databases</span>
+                    <span class="keyword">Model Deployment</span>
+                    <span class="keyword">AI Automation</span>
+                </div>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary" data-translate="hero_cta_contact">Get In Touch</a>
+                    <a href="assets/Ritesh_Zambre_Resume.pdf" download class="btn btn-secondary" data-translate="hero_cta_resume">Download Resume</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="section" id="expertise">
+        <div class="container">
+            <h2 class="section-title" data-translate="expertise_title">Core Expertise</h2>
+            <p class="section-subtitle" data-translate="expertise_subtitle">Versatile across technologies, domains, and AI paradigms</p>
+            
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="expertise_genai_title">Generative AI & LLMs</h3>
+                    <p data-translate="expertise_genai_desc">Fine-tuning, prompt engineering, RAG architectures, LangChain, vector embeddings, semantic search</p>
+                    <div class="expertise-tags">
+                        <span>GPT-4</span>
+                        <span>Claude</span>
+                        <span>Llama</span>
+                        <span>RAG</span>
+                        <span>LangChain</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="expertise_agentic_title">Agentic AI Systems</h3>
+                    <p data-translate="expertise_agentic_desc">Multi-agent frameworks, autonomous reasoning, tool use, chain-of-thought, ReAct patterns, AI orchestration</p>
+                    <div class="expertise-tags">
+                        <span>AutoGPT</span>
+                        <span>CrewAI</span>
+                        <span>LangGraph</span>
+                        <span>Agents</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <path d="M8 21h8M12 17v4"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="expertise_mlops_title">MLOps & Infrastructure</h3>
+                    <p data-translate="expertise_mlops_desc">CI/CD pipelines, model versioning, monitoring, Kubernetes, Docker, cloud deployment, scalable ML systems</p>
+                    <div class="expertise-tags">
+                        <span>Kubernetes</span>
+                        <span>MLflow</span>
+                        <span>Airflow</span>
+                        <span>Docker</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="expertise_ml_title">Machine Learning Engineering</h3>
+                    <p data-translate="expertise_ml_desc">Deep learning, computer vision, NLP, time series, recommendation systems, neural architecture design</p>
+                    <div class="expertise-tags">
+                        <span>PyTorch</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-learn</span>
+                        <span>XGBoost</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/>
+                            <path d="M3 9V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4M12 3v6"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="expertise_data_title">Data Engineering</h3>
+                    <p data-translate="expertise_data_desc">ETL pipelines, data warehousing, real-time processing, distributed systems, big data frameworks</p>
+                    <div class="expertise-tags">
+                        <span>Spark</span>
+                        <span>Kafka</span>
+                        <span>PostgreSQL</span>
+                        <span>Redis</span>
+                    </div>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="expertise_domains_title">Domain Expertise</h3>
+                    <p data-translate="expertise_domains_desc">Finance, Healthcare, E-commerce, Manufacturing, Telecommunications, Energy, Retail Analytics</p>
+                    <div class="expertise-tags">
+                        <span>FinTech</span>
+                        <span>HealthTech</span>
+                        <span>E-commerce</span>
+                        <span>IoT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="section section-dark" id="tech-stack">
+        <div class="container">
+            <h2 class="section-title" data-translate="stack_title">Technology Stack</h2>
+            <p class="section-subtitle" data-translate="stack_subtitle">Production-ready tools and frameworks</p>
+            
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3 data-translate="stack_ai_title">AI/ML Frameworks</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">🤖</div>
+                            <span>TensorFlow</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🔥</div>
+                            <span>PyTorch</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">⚡</div>
+                            <span>LangChain</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🦜</div>
+                            <span>LlamaIndex</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🤗</div>
+                            <span>HuggingFace</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">📊</div>
+                            <span>Scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3 data-translate="stack_mlops_title">MLOps & DevOps</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">☸️</div>
+                            <span>Kubernetes</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🐳</div>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">📊</div>
+                            <span>MLflow</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🌊</div>
+                            <span>Airflow</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🔄</div>
+                            <span>GitHub Actions</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">📈</div>
+                            <span>Prometheus</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3 data-translate="stack_cloud_title">Cloud & Infrastructure</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">☁️</div>
+                            <span>AWS</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">☁️</div>
+                            <span>Azure</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">☁️</div>
+                            <span>GCP</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🔧</div>
+                            <span>Terraform</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🎯</div>
+                            <span>Vertex AI</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🚀</div>
+                            <span>SageMaker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3 data-translate="stack_data_title">Data & Databases</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">🔍</div>
+                            <span>Pinecone</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🗄️</div>
+                            <span>Weaviate</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🐘</div>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🍃</div>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">⚡</div>
+                            <span>Redis</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🔥</div>
+                            <span>Apache Spark</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3 data-translate="stack_lang_title">Programming Languages</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">🐍</div>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">📜</div>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">☕</div>
+                            <span>Java</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">📊</div>
+                            <span>SQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🔷</div>
+                            <span>Go</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">📈</div>
+                            <span>R</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="section" id="tools">
+        <div class="container">
+            <h2 class="section-title" data-translate="tools_title">AI Tools & Solutions</h2>
+            <p class="section-subtitle" data-translate="tools_subtitle">Coming soon - Custom AI tools and utilities</p>
+            
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-status">Coming Soon</div>
+                    <h3 data-translate="tool1_title">AI Document Analyzer</h3>
+                    <p data-translate="tool1_desc">Intelligent document processing and analysis tool</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-status">Coming Soon</div>
+                    <h3 data-translate="tool2_title">MLOps Dashboard</h3>
+                    <p data-translate="tool2_desc">Monitor and manage ML model deployments</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-status">Coming Soon</div>
+                    <h3 data-translate="tool3_title">Prompt Engineering Studio</h3>
+                    <p data-translate="tool3_desc">Design and test LLM prompts efficiently</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-dark" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact_title">Let's Build Something Great</h2>
+            <p class="section-subtitle" data-translate="contact_subtitle">Available for international projects and consulting</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <h3 data-translate="contact_email_title">Email</h3>
+                        <a href="mailto:riteshz.aiworks@gmail.com" class="contact-link">riteshz.aiworks@gmail.com</a>
+                        <p class="contact-note" data-translate="contact_email_note">Preferred for detailed inquiries</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <h3 data-translate="contact_whatsapp_title">WhatsApp</h3>
+                        <a href="https://wa.me/917028224490" class="contact-link" target="_blank">+91 70282 24490</a>
+                        <p class="contact-note" data-translate="contact_whatsapp_note">Quick responses</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </div>
+                        <h3 data-translate="contact_linkedin_title">LinkedIn</h3>
+                        <a href="https://linkedin.com/in/riteshz/" class="contact-link" target="_blank">linkedin.com/in/riteshz/</a>
+                        <p class="contact-note" data-translate="contact_linkedin_note">Professional network</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                        </div>
+                        <h3 data-translate="contact_github_title">GitHub</h3>
+                        <a href="https://github.com/riteshzambre" class="contact-link" target="_blank">github.com/riteshzambre</a>
+                        <p class="contact-note" data-translate="contact_github_note">Open source contributions</p>
+                    </div>
+                </div>
+
+                <div class="contact-cta">
+                    <h3 data-translate="contact_cta_title">Download Professional Documents</h3>
+                    <div class="document-links">
+                        <a href="assets/Ritesh_Zambre_Resume.pdf" download class="doc-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="12" y1="18" x2="12" y2="12"/>
+                                <line x1="9" y1="15" x2="15" y2="15"/>
+                            </svg>
+                            <span data-translate="contact_resume">Resume</span>
+                        </a>
+                        <a href="assets/Ritesh_Zambre_Cover_Letter.pdf" download class="doc-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="12" y1="18" x2="12" y2="12"/>
+                                <line x1="9" y1="15" x2="15" y2="15"/>
+                            </svg>
+                            <span data-translate="contact_cover">Cover Letter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p data-translate="footer_text">&copy; 2026 Ritesh Jaychandra Zambre. All rights reserved.</p>
+                <p class="footer-subtitle" data-translate="footer_subtitle">Building intelligent systems, one model at a time.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <a href="#contact" class="floating-btn" title="Contact Me">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
