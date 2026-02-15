@@ -65,9 +65,9 @@ body {
 /* ==================== LANGUAGE SELECTOR ==================== */
 .language-selector {
     position: fixed;
-    top: 12px;
-    right: 40px;
-    z-index: 10001;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
 }
 
 .language-selector select {
@@ -117,7 +117,6 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 40px;
-    padding-right: 200px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -371,7 +370,6 @@ body {
     font-size: 52px;
     font-weight: 800;
     margin-bottom: 16px;
-    margin-top: 20px;
     text-align: center;
     letter-spacing: -1px;
 }
@@ -581,7 +579,6 @@ body {
 .contact-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 20px;
 }
 
 .contact-info {
@@ -589,7 +586,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 28px;
     margin-bottom: 60px;
-    margin-top: 40px;
 }
 
 .contact-card {
@@ -851,7 +847,6 @@ body {
     
     .nav-container {
         padding: 0 20px;
-        padding-right: 140px;
     }
     
     .section {
@@ -914,8 +909,8 @@ body {
     }
     
     .language-selector {
-        top: 12px;
-        right: 70px;
+        top: 15px;
+        right: 15px;
     }
     
     .language-selector select {
