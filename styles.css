@@ -34,6 +34,20 @@
     --section-padding: 120px;
 }
 
+[data-theme="light"] {
+    --bg-primary: #f8fafc;
+    --bg-secondary: #f1f5f9;
+    --bg-card: rgba(255, 255, 255, 0.8);
+    --bg-card-hover: rgba(241, 245, 249, 0.9);
+    
+    --text-primary: #0f172a;
+    --text-secondary: #334155;
+    --text-muted: #64748b;
+    
+    --border-color: rgba(99, 102, 241, 0.2);
+    --border-hover: rgba(99, 102, 241, 0.4);
+}
+
 /* ==================== GLOBAL RESET ==================== */
 * {
     margin: 0;
@@ -107,7 +121,7 @@ body {
 }
 
 .navbar.scrolled {
-    background: rgba(10, 14, 26, 0.95);
+    background: var(--bg-primary);
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow-md);
     border-bottom: 1px solid var(--border-color);

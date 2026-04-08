@@ -563,3 +563,57 @@ window.addEventListener('load', () => {
 
 console.log('✨ Portfolio loaded successfully!');
 console.log('🚀 Ready to build amazing AI systems!');
+
+// ==================== THEME TOGGLE ====================
+const themeToggle = document.getElementById('themeToggle');
+const sunIcon = document.querySelector('.sun-icon');
+const moonIcon = document.querySelector('.moon-icon');
+
+function setTheme(theme) {
+    if (theme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        if(sunIcon && moonIcon) {
+            sunIcon.style.display = 'block';
+            moonIcon.style.display = 'none';
+        }
+    } else {
+        document.documentElement.removeAttribute('data-theme');
+        if(sunIcon && moonIcon) {
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'block';
+        }
+    }
+    localStorage.setItem('preferredTheme', theme);
+}
+
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        if (currentTheme === 'light') {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
+    });
+}
+
+// init theme
+const savedTheme = localStorage.getItem('preferredTheme') || 'dark';
+setTheme(savedTheme);
+
+// ==================== HIDDEN PASSCODE FOR TRACKER ====================
+let keySequence = '';
+window.addEventListener('keydown', (e) => {
+    keySequence += e.key;
+    if (keySequence.length > 20) keySequence = keySequence.slice(-20);
+    // Secret code: typing "tracker" anywhere on screen
+    if (keySequence.toLowerCase().includes('tracker')) {
+        keySequence = ''; // reset
+        const passcode = prompt("Enter passcode for personal tracker:");
+        if (passcode === 'ritesh2026') {
+            window.location.href = 'tracker.html';
+        } else if (passcode !== null) {
+            alert('Incorrect passcode');
+        }
+    }
+});
